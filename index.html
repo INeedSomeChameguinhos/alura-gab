@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Menu</li>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Área do Aluno</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Área do Professor</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Seed</a>
+        </li>
+      </ul>
+      <img src="img/Design2.png" alt="Logo da Alurabooks" class="container__imagem">
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item"></li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__titulo">Menu</li>
+        </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Seed</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Área do Professor</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Área do Aluno</a>
+          </li>
+        </ul>
+
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Colégio Estadual Professora Izabel F. de Siqueira<h2>
+    <input type="search" class="banner__pesquisa" placeholder="  Qual a sua pergunta?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Nossa escola</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/prof dil.png"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+               <div class="swiper-slide"><img src="img/escola.png" alt="Livro sobre javascript assertivo da alura books">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/escolinha2.png" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/escolinha.png" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/alunos.png" alt="Livro sobre acessibilidade" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Nossos Programas extracurriculares</h2>
+            <p class="descrição__texto">
+              Descubra a educação transformadora com o Programa Agrinho, o Programa Ganhando o Mundo e muito mais! Esses projetos oferecem aos jovens oportunidades únicas de aprendizado e desenvolvimento, preparando-os para o futuro. Participe e faça parte dessa revolução educacional
+            </p>
+          </div>
+          <img src="img/ganhando o mundo.png" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo"></h2>
+
+   
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Professor do Mês</h3>
+            <h2 class="descrição__titulo-livro">Emerson Alberto Warmling</h2>
+            <p class="descrição__texto">Formado em Biologia, Matemática e Física, Emerson vem atuando na área de ensino a mais de 20 anos, sendo um exemplo para a nossa escola.
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="img/prof2.png" class="descrição__imagem">
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Escola Paraná</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">gov.pr</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Faltas</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Grade de Aulas</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Programa Ganhando o Mundo</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações via e-mail.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Colégio Izabel</h2>
+  
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Educação online</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Alura.svg" alt="Logo da Alura" />
+        <a href="#" class="lista-rodapé__link">Alura</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraStart.svg" alt="Logo da Alura START" />
+        <a href="#" class="lista-rodapé__link">Alura Start</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraLingua.svg" alt="Logo da Alura Lingua" />
+        <a href="#" class="lista-rodapé__link">Alura Língua</a>
+      </li>
+    </ul>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
